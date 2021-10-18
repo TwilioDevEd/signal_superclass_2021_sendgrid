@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title="5K9 Running"
+    link(href="https://uiux.s3.amazonaws.com/style-guide/css/style-guide.css" rel="stylesheet")
+    link(href="https://uiux.s3.amazonaws.com/style-guide/css/style-guide-grid.css" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    div.container
+      section.main-nav.row
+        header.col-12.flex-header.is-light
+          div
+            div
+              div.flex-header-title
+                a(href="/")
+                  h1 5K9 Running
+            div.flex-header-tabs
+              a(href="#").flex-header-tab Home
+              a(href="#").flex-header-tab Shop
+              a(href="#").flex-header-tab About
+              a(href="#").flex-header-tab Events
+              a(href="#").flex-header-tab Contact
+          div.flex-header-right
+            div.btn-list
+              a(href="#").btn.btn-secondary Sign In
+              a(href="/signup").btn.btn-primary Sign up
+      section.main-content.landing-page
+        block content

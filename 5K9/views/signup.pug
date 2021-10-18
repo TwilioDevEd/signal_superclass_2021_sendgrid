@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  div.landing-header.row
+    div.col-8.col-start-3
+      h1 Join 5K9 Running
+      p When you sign up for 5K9 Running, you can select access to  three free learning resources to help you start running with your dog.
+  div.landing-media-wrapper.row
+    div.landing-media-wrapper-content.col-4.col-start-5.card
+      form(method='POST' action='/signup/confirmation')
+        fieldset
+          legend Your Information
+          div.input-text-wrap.is-required.is-focused
+            label(for='first_name').input-text-label First Name
+            input#first_name.form-control(type='text' name='first_name' required='true' placeholder="Miles" value="")
+          div.input-text-wrap.is-required.is-focused
+            label(for='last_name').input-text-label.required Last Name 
+            input#last_name.form-control(type='text' name='last_name' placeholder="Swift" required='true' value="").input-text-example-default
+          div.input-text-wrap.is-required.is-focused
+            label(for='email').input-text-label.required Email
+            input#email.form-control(type='email' name='email' placeholder="mswift@5k9.run" required='true' value="").input-text-example-default
+        fieldset
+          legend Your Dog's Information
+          div.input-text-wrap.is-required.is-focused
+            label(for='dog_name').input-text-label Dog's Name
+            input.form-control(type='text' placeholder='Galen Pupp' name='dog_name' required='true' value="")
+        fieldset
+          legend Training Resources
+          div
+            input(type='checkbox' name='resources[loose_leash_guide]' value='Guide to Loose Leash Walking')
+            label(for='resources[loose_leash_guide]') Guide to Loose Leash Walking
+          div
+            input(type='checkbox' name='resources[night_checklist]' value='Night Running Checklist')
+            label(for='resources[night_checklist]') Night Running Checklist
+          div
+            input(type='checkbox' name='resources[harness_picks]' value='2021 Harness Picks')
+            label(for='resources[harness_picks]') 2021 Harness Picks
+        button.btn.btn-primary(type='submit') SUBMIT
+        if errors
+          ul
+            for error in errors
+              li!= error.msg

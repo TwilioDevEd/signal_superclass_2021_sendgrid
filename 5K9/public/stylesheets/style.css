@@ -1,0 +1,35 @@
+body {
+  font-size: 18px;
+}
+
+.flex-header-title::before {
+  border: none;
+}
+
+.flex-header-title h1 {
+  margin-bottom: 0;
+}
+
+.landing-media-wrapper .card {
+  background-color: #fff;
+}
+
+.card form {
+  min-width: 90%;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+legend {
+  margin-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  margin-right: 1em;
+  margin-bottom: 0.66em;
+  opacity: 1;
+}

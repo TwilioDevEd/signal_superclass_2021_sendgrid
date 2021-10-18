@@ -10,6 +10,8 @@
 
 **This repository contains materials to accompany the [Twilio SendGrid session at SIGNAL Superclass 2021](https://signal.twilio.com/sessions/666952).**
 
+![5K9 Running Demo App](5K9/public/images/landing_page_screenshot.png)
+
 Among the communication channels available today, email is non-negotiable. Email is reliable, works globally, and offers flexibility that can't be met by other communications avenues. That may be why 83% of customers prefer to receive business communications via email.
 
 In this SIGNAL Superclass session, you'll learn how to implement the Twilio SendGrid Mail Send API to programmatically deliver email at scale. You'll also see how the Twilio SendGrid dynamic templating system makes it possible to personalize your messages for each customer, and you can expect some deliverability pro-tips along the way.
